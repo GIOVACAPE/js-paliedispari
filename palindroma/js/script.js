@@ -17,8 +17,8 @@ function checkPalindroma(parola) {
 
 
     for (let i = parolaUtente.length = 1 ; i >= 0; i--) {
-        console.log(parolaUtente[i]);
-        parolaInversa = parolaInversa + parola[i];
+        console.log(parola[i]);
+        parolaInversa = parolaInversa + parola[i] ;
         
     }
 
@@ -37,7 +37,7 @@ function checkPalindroma(parola) {
 const parolaUtente = prompt ('Inserisci una parola');
 console.log('parolaUtente', parolaUtente);
 
-if (checkPalindroma()) {
+if (checkPalindroma (parolaUtente)) {
 
     console.log('La parola è palindroma vai tra');
 
