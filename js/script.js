@@ -23,6 +23,15 @@ function checkPalindroma(parola) {
     }
 
     console.log(parolaInversa);
+
+    if (parola == parolaInversa) {
+        return true;
+    }
+
+    else {
+        return false;
+    }
+    
 }
 
 const parolaUtente = prompt ('Inserisci una parola');
