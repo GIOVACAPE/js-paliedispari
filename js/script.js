@@ -9,19 +9,26 @@
     3.b) se la parola NON è palindroma, stampare in console "la parola NON è palindorma"
  */
 
-function checkPalindorma() {
+function checkPalindroma(parola) {
     // verificare se la parola è palindorma
 
+
+    let parolaInversa = '';
+
+
     for (let i = parolaUtente.length = 1 ; i >= 0; i--) {
-        console.log(parolaUtente[i])
+        console.log(parolaUtente[i]);
+        parolaInversa = parolaInversa + parola[i];
         
     }
+
+    console.log(parolaInversa);
 }
 
 const parolaUtente = prompt ('Inserisci una parola');
 console.log('parolaUtente', parolaUtente);
 
-if (checkPalindorma()) {
+if (checkPalindroma()) {
 
     console.log('La parola è palindroma vai tra');
 
@@ -30,5 +37,5 @@ if (checkPalindorma()) {
 else{
 
     console.log('la parola aimè NON è palindorma');
-    
+
 }
