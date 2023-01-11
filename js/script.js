@@ -11,15 +11,24 @@
 
 function checkPalindorma() {
     // verificare se la parola è palindorma
+
+    for (let i = parolaUtente.length = 1 ; i >= 0; i--) {
+        console.log(parolaUtente[i])
+        
+    }
 }
 
 const parolaUtente = prompt ('Inserisci una parola');
 console.log('parolaUtente', parolaUtente);
 
 if (checkPalindorma()) {
+
     console.log('La parola è palindroma vai tra');
+
 }
 
 else{
+
     console.log('la parola aimè NON è palindorma');
+    
 }
